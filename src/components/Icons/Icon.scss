@@ -1,0 +1,38 @@
+@import "config.variables";
+@import "config.functions";
+@import "config.mixins";
+
+.Icon {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+/**
+ * Icon display modifiers
+ */
+
+.Icon--display-inlineBlock {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.2em;
+}
+
+.Icon--display-block {
+  display: block;
+  margin: 0;
+}
+
+/**
+ * Icon positional modifiers (used when alongside text)
+ */
+
+.Icon--position-right {
+  margin-left: gutter(sm);
+}
+
+.Icon--position-left {
+  margin-right: gutter(sm);
+}
