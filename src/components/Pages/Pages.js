@@ -10,16 +10,16 @@ class Pages extends React.Component {
   }
   render(){
     return(
-      <>
+      <div className="Page">
         <Header goToPage={this.goToPage} />
-        <ReactPageScroller animationTimer={700} ref={c => this.reactPageScroller = c}>
-          <Container className="Section-container">
-           <div className="section-one">Section1</div>
-          </Container>
-          <div className="section-two">Section2</div>
-          <div className="section-three">Section3</div>
-        </ReactPageScroller>
-      </>
+        <div className="Section-container">
+          <ReactPageScroller animationTimer={700} ref={c => this.reactPageScroller = c}>
+            <div className="section-one">Section1</div>
+            <div className="section-two">Section2</div>
+            <div className="section-three">Section3</div>
+          </ReactPageScroller>
+        </div>
+      </div>
     );
   }
 } 

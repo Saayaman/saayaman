@@ -1,16 +1,26 @@
+.Page {
+  margin: 40px;
+  overflow: hidden;
+
+}
+
+.Section-container {
+  height: calc(100vh - 80px);
+}
+
 .section-one {
     background-color: #FAAF08;
-    height: 100vh;
+    height: 100%;
 }
 
 .section-two {
   background-color: #FA802F;
-  height: 100vh;
+  height: 100%;
 }
 
 .section-three {
   background-color: #FA4033;
-  height: 100vh;
+  height: 100%;
 }
 
 .section-all {
