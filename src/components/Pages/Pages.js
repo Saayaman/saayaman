@@ -11,7 +11,7 @@ class Pages extends React.Component {
   render(){
     return(
       <>
-        <Header />
+        <Header goToPage={this.goToPage} />
         <ReactPageScroller animationTimer={700} ref={c => this.reactPageScroller = c}>
           <Container className="Section-container">
            <div className="section-one">Section1</div>
