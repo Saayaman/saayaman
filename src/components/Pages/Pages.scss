@@ -1,15 +1,36 @@
 .Page {
   margin: 40px;
   overflow: hidden;
-
 }
 
 .Section-container {
   height: calc(100vh - 80px);
+  background-color: #f8f8f8;
 }
 
-.section-one {
-    background-color: #FAAF08;
+.Section-one {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  // display: flex;
+  // justify-content: center;
+}
+
+.Section-one h1 {
+  margin-top: 20vh;
+  font-size: 100px;
+}
+
+.Section-one-fullBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.Section-one-bg {
+    background-color: #00bd7e;
+    width: 50%;
     height: 100%;
 }
 
@@ -23,6 +44,6 @@
   height: 100%;
 }
 
-.section-all {
-  background-color: #FEF2E2;
-}
+// .section-all {
+//   background-color: #FEF2E2;
+// }
