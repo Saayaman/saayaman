@@ -1,3 +1,4 @@
+@import '../../styles/variables.scss';
 
 .Section-one {
   height: 100%;
@@ -14,6 +15,9 @@
 .Section-one h1 {
   margin-top: 20vh;
   font-size: 100px;
+  z-index: 1000;
+  position: absolute;
+  width: 100vw;
 }
 
 .Section-one-fullBg {
@@ -23,8 +27,48 @@
   text-align: center;
 }
 
-.Section-one-bg {
-    background-color: #00bd7e;
-    width: 50%;
-    height: 100%;
+.Homepage-bg {
+  background-color: #00bd7e;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Homepage-left {
+  left: 0;
+  text-align: left;
+}
+
+.Homepage-right {
+  right: 0;
+  text-align: right;
+}
+
+
+.Homepage-japan {
+  // position: absolute;
+  // top: 40%;
+  // right: 40px;
+}
+
+.Homepage-vancouver {
+  // position: absolute;
+  // top: 40%;
+  // left: 40px;
+}
+
+.Homepage-japan, .Homepage-vancouver {
+  h2 {
+    color: $brandcolor-2;
+    font-family: 'Kaushan Script', cursive;
+
+  }
+
+  p {
+    color: white;
+  }
 }

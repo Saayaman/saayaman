@@ -1,4 +1,6 @@
 @import './fonts.scss';
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
 
 :root {
   font-family: 'montserrat', sans-serif;
@@ -17,6 +19,13 @@ h1 {
   font-weight: 600;
 }
 
+h2 {
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+}
 
 ul, li {
   padding: 0;
