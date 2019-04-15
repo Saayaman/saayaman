@@ -1,4 +1,5 @@
 import React from 'react';
+import airplane from '../../images/airplane.svg';
 import './HomePage.scss';
 
 class HomePage extends React.Component {
@@ -17,7 +18,10 @@ class HomePage extends React.Component {
           {activeSide === 'right' ? (
             <div className="Homepage-bg Homepage-left">
               <div className="Homepage-vancouver">
-                <h2>To Vancouver</h2>
+                <span className="Homepage-vancouver-title">
+                  <h2>To Vancouver</h2>
+                  <img alt="airplane" src={airplane} />
+                </span>
                 <p>Now I’m a Vancouver based<br />web designer/developer.</p>
               </div>
             </div>

@@ -28,6 +28,7 @@
 }
 
 .Homepage-bg {
+  letter-spacing: 1.4;
   background-color: #00bd7e;
   width: 50%;
   height: 100%;
@@ -55,17 +56,22 @@
   // right: 40px;
 }
 
-.Homepage-vancouver {
-  // position: absolute;
-  // top: 40%;
-  // left: 40px;
+.Homepage-vancouver-title {
+  display: inline-flex;
+  align-items: center;
+
+  img {
+    margin-left: 1rem;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .Homepage-japan, .Homepage-vancouver {
   h2 {
     color: $brandcolor-2;
     font-family: 'Kaushan Script', cursive;
-
+    font-size: 28px;
   }
 
   p {
