@@ -1,0 +1,40 @@
+
+.Header-menu {
+  position: fixed;
+  z-index: 1000;
+  right: 80px;
+  top: 30px;
+}
+
+.Header-menu-list {
+  text-align: right;
+  position: absolute;
+  top: 2.4rem;
+  right: 0;
+
+  li {
+    margin-top: 0.6rem;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+}
+
+.msk {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+
+  span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    height: 15px;
+    background: #ff5851;
+    opacity: 0.5;
+    z-index: -1;
+  }
+}

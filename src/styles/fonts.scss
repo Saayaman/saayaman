@@ -1,0 +1,97 @@
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 300;
+}
+
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+}
+
+// @font-face {
+//   font-family: 'montserrat';
+//   src: url('/fonts/webfonts/389367_1_0.eot');
+//   src: url('/fonts/webfonts/389367_1_0.eot?#iefix') format('embedded-opentype'),
+//   url('/fonts/webfonts/389367_1_0.woff2') format('woff2'),
+//   url('/fonts/webfonts/389367_1_0.woff') format('woff'),
+//   url('/fonts/webfonts/389367_1_0.ttf') format('truetype');
+//   font-weight: 200;
+// }
+ 
+// @font-face {
+//   font-family: 'montserrat';
+//   src: url('/fonts/389367_0_0.eot');
+//   src: url('/fonts/389367_0_0.eot?#iefix') format('embedded-opentype'),
+//   url('/fonts/389367_0_0.woff2') format('woff2'),
+//   url('/fonts/389367_0_0.woff') format('woff'),
+//   url('/fonts/389367_0_0.ttf') format('truetype');
+//   font-weight: 400;
+// }
+  
+// @font-face {
+//   font-family: 'montserrat';
+//   src: url('/fonts/webfonts/389367_3_0.eot');
+//   src: url('/fonts/webfonts/389367_3_0.eot?#iefix') format('embedded-opentype'),
+//   url('/fonts/webfonts/389367_3_0.woff2') format('woff2'),
+//   url('/fonts/webfonts/389367_3_0.woff') format('woff'),
+//   url('/fonts/webfonts/389367_3_0.ttf') format('truetype');
+//   font-weight: 500;
+// }
+ 
+  
+// @font-face {
+//   font-family: 'montserrat-SemiboldItalic';
+//   src: url('/fonts/webfonts/389367_4_0.eot');
+//   src: url('/fonts/webfonts/389367_4_0.eot?#iefix') format('embedded-opentype'),
+//   url('/fonts/webfonts/389367_4_0.woff2') format('woff2'),
+//   url('/fonts/webfonts/389367_4_0.woff') format('woff'),
+//   url('/fonts/webfonts/389367_4_0.ttf') format('truetype');
+// }
+  
+// @font-face {
+//   font-family: 'montserrat-RegularItalic';
+//   src: url('/fonts/webfonts/389367_5_0.eot');
+//   src: url('/fonts/webfonts/389367_5_0.eot?#iefix') format('embedded-opentype'),
+//   url('/fonts/webfonts/389367_5_0.woff2') format('woff2'),
+//   url('/fonts/webfonts/389367_5_0.woff') format('woff'),
+//   url('/fonts/webfonts/389367_5_0.ttf') format('truetype');
+// }
+ 
+  
+// @font-face {font-family: 'montserrat-LightItalic';
+//   src: url('/fonts/webfonts/389367_6_0.eot');
+//   src: url('/fonts/webfonts/389367_6_0.eot?#iefix') format('embedded-opentype'),
+//   url('/fonts/webfonts/389367_6_0.woff2') format('woff2'),
+//   url('/fonts/webfonts/389367_6_0.woff') format('woff'),
+//   url('/fonts/webfonts/389367_6_0.ttf') format('truetype');
+// }
+ 
+  
+// @font-face {font-family: 'montserrat-BoldItalic';
+//   src: url('/fonts/webfonts/389367_7_0.eot');
+//   src: url('/fonts/webfonts/389367_7_0.eot?#iefix') format('embedded-opentype'),
+//   url('/fonts/webfonts/389367_7_0.woff2') format('woff2'),
+//   url('/fonts/webfonts/389367_7_0.woff') format('woff'),
+//   url('/fonts/webfonts/389367_7_0.ttf') format('truetype');
+// }
+ 
