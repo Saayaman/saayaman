@@ -1,3 +1,4 @@
+@import '../../styles/variables.scss';
 
 .Header-menu {
   position: fixed;
@@ -15,7 +16,7 @@
   li {
     margin-top: 0.6rem;
     white-space: nowrap;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
@@ -33,7 +34,7 @@
     left: 0px;
     right: 0px;
     height: 15px;
-    background: #ff5851;
+    background: $brandcolor-1;
     opacity: 0.5;
     z-index: -1;
   }
