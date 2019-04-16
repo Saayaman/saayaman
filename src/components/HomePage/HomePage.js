@@ -28,7 +28,10 @@ class HomePage extends React.Component {
           ) : (
             <div className="Homepage-bg Homepage-right">
               <div className="Homepage-japan">
-                <h2>From Japan</h2>
+                <span className="Homepage-japan-title">
+                  <img alt="airplane" src={airplane} />
+                  <h2>From Japan</h2>
+                </span>
                 <p>I was a graphic/web designer<br />in Tokyo.</p>
               </div>
             </div>

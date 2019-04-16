@@ -49,23 +49,28 @@
   text-align: right;
 }
 
-
-.Homepage-japan {
-  // position: absolute;
-  // top: 40%;
-  // right: 40px;
+.Homepage-vancouver-title, .Homepage-japan-title {
+  display: inline-flex;
+  align-items: center;
 }
 
 .Homepage-vancouver-title {
-  display: inline-flex;
-  align-items: center;
-
   img {
     margin-left: 1rem;
     width: 20px;
     height: 20px;
   }
 }
+
+.Homepage-japan-title {
+  img {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+  }
+}
+
 
 .Homepage-japan, .Homepage-vancouver {
   h2 {
