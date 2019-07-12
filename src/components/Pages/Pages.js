@@ -11,8 +11,8 @@ class Pages extends React.Component {
     currentPage: 0,
   }
   goToPage = (pageNumber) => {
+    console.log(pageNumber)
     this.reactPageScroller.goToPage(pageNumber);
-    this.pageOnChange(pageNumber)
   }
 
   pageOnChange = (pageNumber) => {
@@ -24,13 +24,13 @@ class Pages extends React.Component {
     const { currentPage } = this.state;
     return(
       <>
-      <Header goToPage={this.goToPage} />
+      <Header />
       <div className="Page">
         <Menu goToPage={this.goToPage} currentPage={currentPage} />
         <div className="Section-container">
           <ReactPageScroller
             containerWidth={'100%'}
-            animationTimer={700}
+            animationTimer={1000}
             ref={c => this.reactPageScroller = c}
             pageOnChange={this.pageOnChange}
           >

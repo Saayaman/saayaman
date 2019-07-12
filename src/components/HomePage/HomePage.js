@@ -1,41 +1,69 @@
 import React from 'react';
+import cx from 'classnames';
 import airplane from '../../images/airplane.svg';
 import './HomePage.scss';
+import Container from '../Container/Container';
 
 class HomePage extends React.Component {
   state = {
-    activeSide: 'right'
+    isActiveSideRight: 'right'
   }
+
+  handleMouseOver = (side) => (
+    this.setState({
+      isActiveSideRight: side
+    })
+  )
   render() {
-    const { activeSide } = this.state;
+    const { isActiveSideRight } = this.state;
     return (
       <div className="Section-one">
         <div className="Section-one-fullBg">
           <h1>HELLO<span className="HomePage-dot">.</span></h1>
         </div>
-        {/* <div className="Section-one-bg"></div> */}
-        <div className="Homepage-airplane"></div>
-          {activeSide === 'right' ? (
-            <div className="Homepage-bg Homepage-left">
+      
+
+          <Container size="sm" className="Homepage-Titles">
+          <div className="Airplane">
+            <img alt="airplane" src={airplane}
+              className={cx({
+                "Homepage-japan-plane": isActiveSideRight,
+                "Homepage-vancouver-plane": !isActiveSideRight,
+              })}
+            />
+          </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', position: 'relative' }}>
+              <span className="Homepage-vancouver-title">
+                <h2>To Vancouver</h2>
+              </span>
+              <span className="Homepage-japan-title">
+                <h2>From Japan</h2>
+              </span>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+              <p>Now I’m a Vancouver based<br />web designer/developer.</p>
+              <p>I was a graphic/web designer<br />in Tokyo.</p>
+            </div>
+          </Container>
+          
+       
+          {/* {!isActiveSideRight ? ( */}
+            {/* <div className="Homepage-bg Homepage-left">
               <div className="Homepage-vancouver">
-                <span className="Homepage-vancouver-title">
-                  <h2>To Vancouver</h2>
-                  <img alt="airplane" src={airplane} />
-                </span>
+
                 <p>Now I’m a Vancouver based<br />web designer/developer.</p>
               </div>
-            </div>
-          ) : (
-            <div className="Homepage-bg Homepage-right">
+            </div> */}
+          {/* ) : ( */}
+            {/* <div className="Homepage-bg Homepage-right">
               <div className="Homepage-japan">
-                <span className="Homepage-japan-title">
-                  <img alt="airplane" src={airplane} />
-                  <h2>From Japan</h2>
-                </span>
+
                 <p>I was a graphic/web designer<br />in Tokyo.</p>
               </div>
-            </div>
-          )}
+            </div> */}
+          {/* )} */}
+        {/* <div className="Homepage-button-left" onClick={() => this.handleMouseOver(false)} ></div>
+        <div className="Homepage-button-right" onClick={() => this.handleMouseOver(true)}></div> */}
       </div>
     )
   }

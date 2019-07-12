@@ -6,6 +6,12 @@
   position: relative;
   // display: flex;
   // justify-content: center;
+
+  h2 {
+    color: $brandcolor-2;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 28px;
+  }
 }
 
 .HomePage-dot {
@@ -25,6 +31,24 @@
   width: 100%;
   height: 100%;
   text-align: center;
+}
+
+.Homepage-button-left {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.Homepage-button-right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
 
 .Homepage-bg {
@@ -49,35 +73,39 @@
   text-align: right;
 }
 
+.Homepage-Titles {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Airplane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(30%, 30px, 0px);
+}
+
 .Homepage-vancouver-title, .Homepage-japan-title {
   display: inline-flex;
   align-items: center;
 }
 
-.Homepage-vancouver-title {
-  img {
-    margin-left: 1rem;
-    width: 20px;
-    height: 20px;
-  }
+.Homepage-vancouver-plane {
+  margin-left: 1rem;
+  width: 20px;
+  height: 20px;
 }
 
-.Homepage-japan-title {
-  img {
+.Homepage-japan-plane {
     margin-right: 1rem;
     width: 20px;
     height: 20px;
     transform: rotate(180deg);
-  }
 }
 
-
 .Homepage-japan, .Homepage-vancouver {
-  h2 {
-    color: $brandcolor-2;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 28px;
-  }
 
   p {
     color: white;

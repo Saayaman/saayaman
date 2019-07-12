@@ -3,7 +3,7 @@ import menuIcon from '../../images/menu.svg';
 import './Header.scss';
 import Container from '../Container/Container';
 
-const Header = ({ goToPage }) => (
+const Header = () => (
     <header className="Header">
       <Container className="Header-container">
         <div className="Header-logo">AYAKO</div>

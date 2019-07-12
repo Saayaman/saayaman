@@ -2,10 +2,21 @@
 
 .Container {
   margin: 0 auto;
-  padding: 0 1.2rem;
   max-width: 1480px;
-  
+}
+
+.Container--lg {
+  padding: 0 1.2rem;
+    
   @include break(sm) {
     padding: 0 40px;
+  };
+}
+
+.Container--sm {
+  padding: 0 1.2rem;
+    
+  @include break(sm) {
+    padding: 0 100px;
   };
 }
