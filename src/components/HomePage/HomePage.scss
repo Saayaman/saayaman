@@ -1,4 +1,6 @@
 @import '../../styles/variables.scss';
+@import '../../styles/zindex.scss';
+@import '../../styles/animations.scss';
 
 .Section-one {
   height: 100%;
@@ -15,7 +17,12 @@
 }
 
 .HomePage-dot {
+  transition: color 0.4s ease;
   color: #00bd7e;
+
+  &-right {
+    color: #ffe400;
+  }
 }
 
 .Section-one h1 {
@@ -34,6 +41,7 @@
 }
 
 .Section-one-green {
+  z-index: 10;
   height: 100%;
   width: 50%;
   position: absolute;
@@ -86,10 +94,17 @@
 }
 
 .Homepage-title-wrapper {
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   position: relative;
   align-items: center;
+}
+
+.Homepage-hero-text {
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
 }
 
 .Homepage-Titles {
@@ -121,6 +136,7 @@
 }
 
 .Airplane-dotted {
+  transition: width 3s ease;
   height: 2px;
   width: 0;
   border-top: 2px dotted #ffe400;

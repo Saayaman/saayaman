@@ -1,0 +1,18 @@
+.slideUp {
+  animation: slideUp .6s ease;
+}
+
+@mixin slideUp() {
+  animation: slideUp .6s ease;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1.4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

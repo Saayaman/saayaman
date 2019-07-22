@@ -10,7 +10,7 @@ class HomePage extends React.Component {
       this.setState({
         isActiveSideRight: true
       })
-    }, 3000)
+    }, 1500)
   }
 
   state = {
@@ -27,7 +27,9 @@ class HomePage extends React.Component {
     return (
       <div className="Section-one">
         <div className="Section-one-fullBg">
-          <h1>HELLO<span className="HomePage-dot">.</span></h1>
+          <h1>{isActiveSideRight ? <span className="slideUp">HELLO</span> : 'こんにちは'  }<span className={cx('HomePage-dot', {
+            'HomePage-dot-right': isActiveSideRight
+          })}>.</span></h1>
         </div>
         <div className={cx('Section-one-green', {
           'Section-one-green--right': isActiveSideRight
@@ -40,7 +42,9 @@ class HomePage extends React.Component {
             <div className="Homepage-title-wrapper">
               <span className="Homepage-vancouver-title">
                 <h2>From Japan</h2>
-                <div className="Airplane-dotted" />
+                <div className={cx("Airplane-dotted", {
+                  'Airplane-dotted--right': isActiveSideRight
+                })} />
                 <div className="Airplane">
                   <img alt="airplane" src={airplane}
                     className={cx({
@@ -52,12 +56,13 @@ class HomePage extends React.Component {
               </span>
               
               <span className="Homepage-japan-title">
-                <h2>To Vancouver</h2>
+                {isActiveSideRight && <h2 className="slideUp">To Vancouver</h2>}
               </span>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+            <div className="Homepage-hero-text">
               <p className="Homepage-japan-text">I was a graphic/web designer<br />in Tokyo.</p>
-              <p className="Homepage-vancouver-text">Now I’m a Vancouver based<br /> frontend developer.</p>
+              
+              {isActiveSideRight && <p className="Homepage-vancouver-text slideUp">Now I’m a Vancouver based<br /> frontend developer.</p>}
             </div>
           </Container>
           
