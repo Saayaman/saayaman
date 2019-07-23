@@ -35,6 +35,26 @@ ul, li {
   list-style: none;
 }
 
+button {
+  font-size: 16px;
+  font-family: 'montserrat', sans-serif;
+  background-color: none;
+  border: none;
+  font-weight: 300;
+}
+
 // .slideUp {
 //   @include slideUp;
 // }
+
+.GreenLink {
+  transition: 0.4s ease;
+  cursor: pointer;
+  color: #00bd7e;
+
+  &:hover {
+    background-color: #00bd7e;
+    color: white;
+  }
+}
+

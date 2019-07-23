@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
 import './Pages.scss';
 import HomePage from '../HomePage/HomePage';
-
+import SectionTwo from '../SectionTwo/SectionTwo';
 class Pages extends React.Component {
 
   state = {
@@ -35,7 +35,7 @@ class Pages extends React.Component {
             pageOnChange={this.pageOnChange}
           >
             <HomePage />
-            <div className="section-two">Section2</div>
+            <div className="section-two"><SectionTwo /></div>
             <div className="section-three">Section3</div>
             <div className="section-four">Section4</div>
 

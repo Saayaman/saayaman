@@ -11,12 +11,16 @@ const Menu = ({ goToPage, currentPage}) => {
     <ul className="Header-menu-list">
       {header.map(menu => (
         <li>
-          <a onClick={() => goToPage(menu.pageNum)}>
-            <span className={cx({
-              "msk" : currentPage === menu.pageNum 
-            })}>
+          <a className={cx('Menu-link', {
+              "msk" : currentPage === menu.pageNum,
+              "msk-green": currentPage !== 0,
+            })} onClick={() => goToPage(menu.pageNum)}>
+            {/* <span className={cx({
+              "msk" : currentPage === menu.pageNum,
+              "msk-green": currentPage !== 0,
+            })}> */}
               <span>{menu.text}</span>
-            </span>
+            {/* </span> */}
           </a>
         </li>
       ))}
