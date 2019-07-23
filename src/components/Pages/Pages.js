@@ -5,6 +5,8 @@ import Menu from '../Menu/Menu';
 import './Pages.scss';
 import HomePage from '../HomePage/HomePage';
 import SectionTwo from '../SectionTwo/SectionTwo';
+import SectionThree from '../SectionThree/SectionThree';
+
 class Pages extends React.Component {
 
   state = {
@@ -36,7 +38,7 @@ class Pages extends React.Component {
           >
             <HomePage />
             <div className="section-two"><SectionTwo /></div>
-            <div className="section-three">Section3</div>
+            <div className="section-three"><SectionThree /></div>
             <div className="section-four">Section4</div>
 
           </ReactPageScroller>
